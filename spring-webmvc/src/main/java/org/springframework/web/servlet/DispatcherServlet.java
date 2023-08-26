@@ -484,6 +484,7 @@ public class DispatcherServlet extends FrameworkServlet {
 
 
 	/**
+	 * 整合MVC需要的信息
 	 * This implementation calls {@link #initStrategies}.
 	 */
 	@Override

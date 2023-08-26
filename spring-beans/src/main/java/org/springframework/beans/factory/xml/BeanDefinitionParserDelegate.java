@@ -435,6 +435,7 @@ public class BeanDefinitionParserDelegate {
 			checkNameUniqueness(beanName, aliases, ele);
 		}
 
+		// 解析BeanDefinition
 		AbstractBeanDefinition beanDefinition = parseBeanDefinitionElement(ele, beanName, containingBean);
 		if (beanDefinition != null) {
 			// 实在没有BeanName（无id、name、alias），会自动生成BeanName
@@ -515,7 +516,7 @@ public class BeanDefinitionParserDelegate {
 		}
 
 		try {
-			// 创建bd
+			// 创建BeanDefinition
 			AbstractBeanDefinition bd = createBeanDefinition(className, parent);
 
 			// 解析属性
